@@ -1,0 +1,16 @@
+services:
+  intellidev:
+    build: .
+    image: intellidev-web:local
+    container_name: intellidev
+    ports:
+      - "8787:8787"
+    environment:
+      DEVOPEN_ROOT: /workspace
+      DEVOPEN_WEB_PORT: "8787"
+      DEVOPEN_CONTAINER: "true"
+    volumes:
+      # Read-only mount of the host development tree. Change :ro to
+      # read-write only if you intentionally want the container to be able
+      # to create projects or delete build artifacts on the host.
+      - "D:/TMK75 - Development:/workspace:ro"

@@ -312,7 +312,10 @@ function cleanCommand(args) {
 
 function webCommand() {
   const cfg = getConfig();
-  const port = Number(cfg.webPort) || 8787;
+  const port =
+    Number(process.env.DEVOPEN_WEB_PORT) ||
+    Number(cfg.webPort) ||
+    8787;
   startServer(port);
   console.log('Press Ctrl+C to stop.');
 }

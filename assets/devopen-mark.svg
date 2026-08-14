@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#123322"/>
+      <stop offset="0.58" stop-color="#08150F"/>
+      <stop offset="1" stop-color="#050B08"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#59FF9D" stop-opacity="0.62"/>
+      <stop offset="0.42" stop-color="#28E37F" stop-opacity="0.22"/>
+      <stop offset="0.78" stop-color="#0E9B5B" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0A5D3B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="94" y1="100" x2="424" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B9FFD5"/>
+      <stop offset="0.42" stop-color="#32F28A"/>
+      <stop offset="0.72" stop-color="#12BD6B"/>
+      <stop offset="1" stop-color="#087A46"/>
+    </linearGradient>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect x="3" y="3" width="506" height="506" rx="113" stroke="#1F5038" stroke-opacity="0.72" stroke-width="6"/>
+
+  <circle cx="256" cy="256" r="206" fill="url(#halo)"/>
+
+  <g filter="url(#softGlow)">
+    <circle cx="256" cy="256" r="128" stroke="url(#ring)" stroke-width="38"/>
+  </g>
+
+  <circle cx="256" cy="256" r="106" stroke="#B7FFD4" stroke-opacity="0.2" stroke-width="3"/>
+  <circle cx="256" cy="256" r="150" stroke="#0B6B43" stroke-opacity="0.42" stroke-width="3"/>
+
+  <path d="M185 191L266 256L185 321" stroke="#F0FFF6" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="286" y1="323" x2="348" y2="323" stroke="#8CFFB8" stroke-width="20" stroke-linecap="round"/>
+
+  <circle cx="362" cy="153" r="11" fill="#D0FFE4"/>
+  <circle cx="362" cy="153" r="20" stroke="#D0FFE4" stroke-opacity="0.28" stroke-width="4"/>
+</svg>

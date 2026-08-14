@@ -1,0 +1,12 @@
+.git
+.gitignore
+node_modules
+*.log
+state.json
+.compliance-framework.json
+launch.log
+server.log
+server.err.log
+scripts
+open-web.cmd
+open-web.ps1

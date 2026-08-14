@@ -1,6 +1,6 @@
-# devopen
+# IntelliDev
 
-A zero-dependency project launcher for Windows. Pick a project under your development root, pick a CLI, IDE, or AI coding agent, confirm, and it opens that tool pointed at the project.
+A polished, zero-dependency project launcher for Windows. Pick a project under your development root, pick a CLI, IDE, or AI coding agent, confirm, and it opens that tool pointed at the project.
 
 ## Run it
 
@@ -13,6 +13,26 @@ or double-click / run:
 ```powershell
 .\devopen.cmd
 ```
+
+## Open the web UI in one click
+
+Double-click `IntelliDev.lnk` (or run `.\open-web.cmd` from PowerShell). It starts the server silently in the background, waits for the UI to become ready, then opens `http://127.0.0.1:8787` in your default browser.
+
+When the browser session is closed, the background server stops itself after a short heartbeat timeout. No console window is left behind.
+
+The web UI includes a command palette, project search, pinned projects, recent launches, tool cards, compliance scan, code check, cleanup preview, and new-project scaffold.
+
+## Docker
+
+The web UI can run in a Linux container for browsing, compliance scans, and read-only inspection:
+
+```powershell
+docker compose up --build
+```
+
+Then open `http://localhost:8787`.
+
+The compose file mounts `D:/TMK75 - Development` read-only at `/workspace`. Launching Windows editors, terminals, and AI agents is intentionally disabled inside the container; run the native `IntelliDev` command for those actions.
 
 ## Commands
 

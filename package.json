@@ -1,7 +1,7 @@
 {
-  "name": "devopen",
+  "name": "intellidev",
   "version": "1.0.0",
-  "description": "Project launcher: pick a project, pick a CLI/IDE/agent, open it there.",
+  "description": "IntelliDev: a polished project launcher for editors, terminals, and AI coding agents.",
   "main": "index.js",
   "bin": {
     "devopen": "index.js"
