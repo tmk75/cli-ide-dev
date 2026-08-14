@@ -58,6 +58,7 @@
         "type": "exe-folder",
         "exe": "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe",
         "args": [
+          "--no-sandbox",
           "{project}"
         ]
       }
