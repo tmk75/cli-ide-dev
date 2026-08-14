@@ -1,0 +1,16 @@
+{
+  "name": "devopen",
+  "version": "1.0.0",
+  "description": "Project launcher: pick a project, pick a CLI/IDE/agent, open it there.",
+  "main": "index.js",
+  "bin": {
+    "devopen": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

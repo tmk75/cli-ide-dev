@@ -1,0 +1,15 @@
+{
+  "developmentRoot": "D:\\TMK75 - Development",
+  "excludeFolders": [
+    "cli-ide-selection"
+  ],
+  "autoResume": false,
+  "complianceCheck": true,
+  "webPort": 8787,
+  "defaultProfile": null,
+  "providerRouting": {
+    "default": "qwen-bailian",
+    "tools": {}
+  },
+  "profiles": {}
+}

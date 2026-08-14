@@ -1,0 +1,77 @@
+{
+  "providers": {
+    "deepseek": {
+      "label": "DeepSeek",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "models": [
+        "deepseek-chat",
+        "deepseek-reasoner"
+      ],
+      "apiKeyEnv": "DEEPSEEK_API_KEY",
+      "notes": "OpenAI-compatible. Point Cline / Roo Code / Continue at this base URL."
+    },
+    "qwen-bailian": {
+      "label": "Qwen (Aliyun Bailian / DashScope)",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "models": [
+        "qwen3-coder",
+        "qwen3-thinking",
+        "qwen-plus"
+      ],
+      "apiKeyEnv": "DASHSCOPE_API_KEY",
+      "notes": "QoderCN already has this built in. For other editors, use the compatible-mode endpoint."
+    },
+    "qwen-international": {
+      "label": "Qwen (International)",
+      "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "models": [
+        "qwen3-coder",
+        "qwen-plus"
+      ],
+      "apiKeyEnv": "DASHSCOPE_API_KEY",
+      "notes": "International DashScope endpoint."
+    },
+    "grok": {
+      "label": "xAI Grok",
+      "baseUrl": "https://api.x.ai/v1",
+      "models": [
+        "grok-code"
+      ],
+      "apiKeyEnv": "XAI_API_KEY",
+      "notes": "Grok Code is the xAI coding agent. Dogfood this from the launcher."
+    },
+    "kimi": {
+      "label": "Moonshot Kimi",
+      "baseUrl": "https://api.moonshot.cn/v1",
+      "models": [
+        "kimi-k2"
+      ],
+      "apiKeyEnv": "MOONSHOT_API_KEY",
+      "notes": "Moonshot's Kimi models."
+    },
+    "claude": {
+      "label": "Anthropic Claude (native)",
+      "native": true,
+      "models": [
+        "claude"
+      ],
+      "notes": "Native Claude Code auth."
+    },
+    "openai": {
+      "label": "OpenAI (native)",
+      "native": true,
+      "models": [
+        "gpt"
+      ],
+      "notes": "Native Codex / OpenAI auth."
+    },
+    "gemini": {
+      "label": "Google Gemini (native)",
+      "native": true,
+      "models": [
+        "gemini"
+      ],
+      "notes": "Native Antigravity / Google auth."
+    }
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "tools": [
+    {
+      "id": "qoder-cn",
+      "label": "QoderCN (VS Code fork · Qwen)",
+      "kind": "ide",
+      "provider": "qwen-bailian",
+      "detect": [
+        "C:\\Program Files\\QoderCN\\QoderCN.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "C:\\Program Files\\QoderCN\\QoderCN.exe",
+        "args": [
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "cursor",
+      "label": "Cursor",
+      "kind": "ide",
+      "detect": [
+        "%LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "%LOCALAPPDATA%\\Programs\\cursor\\Cursor.exe",
+        "args": [
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "kiro",
+      "label": "Kiro",
+      "kind": "ide",
+      "detect": [
+        "%LOCALAPPDATA%\\Programs\\Kiro\\Kiro.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "%LOCALAPPDATA%\\Programs\\Kiro\\Kiro.exe",
+        "args": [
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "antigravity",
+      "label": "Antigravity (Google)",
+      "kind": "ide",
+      "provider": "gemini",
+      "detect": [
+        "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe",
+        "args": [
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "antigravity-ide",
+      "label": "Antigravity IDE",
+      "kind": "ide",
+      "provider": "gemini",
+      "detect": [
+        "%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
+        "args": [
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "qwen",
+      "label": "Qwen IDE",
+      "kind": "ide",
+      "detect": [
+        "%LOCALAPPDATA%\\Programs\\Qwen\\Qwen.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "%LOCALAPPDATA%\\Programs\\Qwen\\Qwen.exe",
+        "args": [
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "qwenworkcn",
+      "label": "QwenWorkCN",
+      "kind": "ide",
+      "detect": [
+        "%LOCALAPPDATA%\\Programs\\QwenWorkCN\\Launcher.exe"
+      ],
+      "launch": {
+        "type": "exe-folder",
+        "exe": "%LOCALAPPDATA%\\Programs\\QwenWorkCN\\Launcher.exe",
+        "args": []
+      }
+    },
+    {
+      "id": "windows-terminal",
+      "label": "Windows Terminal",
+      "kind": "terminal",
+      "detect": [
+        "%LOCALAPPDATA%\\Microsoft\\WindowsApps\\wt.exe"
+      ],
+      "launch": {
+        "type": "wt",
+        "exe": "%LOCALAPPDATA%\\Microsoft\\WindowsApps\\wt.exe",
+        "args": [
+          "-d",
+          "{project}"
+        ]
+      }
+    },
+    {
+      "id": "powershell",
+      "label": "PowerShell",
+      "kind": "terminal",
+      "detect": [
+        "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+      ],
+      "launch": {
+        "type": "powershell",
+        "exe": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "args": []
+      }
+    },
+    {
+      "id": "cmd",
+      "label": "Command Prompt",
+      "kind": "terminal",
+      "detect": [
+        "C:\\WINDOWS\\system32\\cmd.exe"
+      ],
+      "launch": {
+        "type": "cmd",
+        "exe": "C:\\WINDOWS\\system32\\cmd.exe",
+        "args": []
+      }
+    },
+    {
+      "id": "git-bash",
+      "label": "Git Bash",
+      "kind": "terminal",
+      "detect": [
+        "C:\\Program Files\\Git\\git-bash.exe"
+      ],
+      "launch": {
+        "type": "git-bash",
+        "exe": "C:\\Program Files\\Git\\git-bash.exe",
+        "args": []
+      }
+    },
+    {
+      "id": "wsl",
+      "label": "WSL",
+      "kind": "terminal",
+      "detect": [
+        "C:\\WINDOWS\\system32\\wsl.exe"
+      ],
+      "launch": {
+        "type": "wsl",
+        "exe": "C:\\WINDOWS\\system32\\wsl.exe",
+        "args": []
+      }
+    },
+    {
+      "id": "grok",
+      "label": "Grok Code (xAI)",
+      "kind": "agent",
+      "provider": "grok",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\grok.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\grok.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "claude",
+      "label": "Claude Code",
+      "kind": "agent",
+      "provider": "claude",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\claude.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\claude.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "codex",
+      "label": "OpenAI Codex",
+      "kind": "agent",
+      "provider": "openai",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\codex.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\codex.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "kimi",
+      "label": "Kimi CLI",
+      "kind": "agent",
+      "provider": "kimi",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\kimi.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\kimi.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "qodercli",
+      "label": "Qoder CLI",
+      "kind": "agent",
+      "provider": "qwen-international",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\qodercli.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\qodercli.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "qoderclicn",
+      "label": "Qoder CLI (CN)",
+      "kind": "agent",
+      "provider": "qwen-bailian",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\qoderclicn.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\qoderclicn.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "qodercn",
+      "label": "Qoder CN CLI",
+      "kind": "agent",
+      "provider": "qwen-bailian",
+      "detect": [
+        "%USERPROFILE%\\.toolkit\\bin\\qodercn.cmd"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%USERPROFILE%\\.toolkit\\bin\\qodercn.cmd",
+        "args": []
+      }
+    }
+  ]
+}
