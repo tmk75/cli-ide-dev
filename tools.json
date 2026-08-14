@@ -63,50 +63,6 @@
       }
     },
     {
-      "id": "antigravity-ide",
-      "label": "Antigravity IDE",
-      "kind": "ide",
-      "provider": "gemini",
-      "detect": [
-        "%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
-      ],
-      "launch": {
-        "type": "exe-folder",
-        "exe": "%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
-        "args": [
-          "{project}"
-        ]
-      }
-    },
-    {
-      "id": "qwen",
-      "label": "Qwen IDE",
-      "kind": "ide",
-      "detect": [
-        "%LOCALAPPDATA%\\Programs\\Qwen\\Qwen.exe"
-      ],
-      "launch": {
-        "type": "exe-folder",
-        "exe": "%LOCALAPPDATA%\\Programs\\Qwen\\Qwen.exe",
-        "args": [
-          "{project}"
-        ]
-      }
-    },
-    {
-      "id": "qwenworkcn",
-      "label": "QwenWorkCN",
-      "kind": "ide",
-      "detect": [
-        "%LOCALAPPDATA%\\Programs\\QwenWorkCN\\Launcher.exe"
-      ],
-      "launch": {
-        "type": "exe-folder",
-        "exe": "%LOCALAPPDATA%\\Programs\\QwenWorkCN\\Launcher.exe",
-        "args": []
-      }
-    },
-    {
       "id": "windows-terminal",
       "label": "Windows Terminal",
       "kind": "terminal",
@@ -231,20 +187,6 @@
       }
     },
     {
-      "id": "qodercli",
-      "label": "Qoder CLI",
-      "kind": "agent",
-      "provider": "qwen-international",
-      "detect": [
-        "%USERPROFILE%\\.toolkit\\bin\\qodercli.cmd"
-      ],
-      "launch": {
-        "type": "agent",
-        "exe": "%USERPROFILE%\\.toolkit\\bin\\qodercli.cmd",
-        "args": []
-      }
-    },
-    {
       "id": "qoderclicn",
       "label": "Qoder CLI (CN)",
       "kind": "agent",
@@ -255,20 +197,6 @@
       "launch": {
         "type": "agent",
         "exe": "%USERPROFILE%\\.toolkit\\bin\\qoderclicn.cmd",
-        "args": []
-      }
-    },
-    {
-      "id": "qodercn",
-      "label": "Qoder CN CLI",
-      "kind": "agent",
-      "provider": "qwen-bailian",
-      "detect": [
-        "%USERPROFILE%\\.toolkit\\bin\\qodercn.cmd"
-      ],
-      "launch": {
-        "type": "agent",
-        "exe": "%USERPROFILE%\\.toolkit\\bin\\qodercn.cmd",
         "args": []
       }
     }
