@@ -48,17 +48,16 @@
     },
     {
       "id": "antigravity",
-      "label": "Antigravity (Google)",
+      "label": "Antigravity IDE",
       "kind": "ide",
       "provider": "gemini",
       "detect": [
-        "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe"
+        "%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe"
       ],
       "launch": {
         "type": "exe-folder",
-        "exe": "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe",
+        "exe": "%LOCALAPPDATA%\\Programs\\Antigravity IDE\\Antigravity IDE.exe",
         "args": [
-          "--no-sandbox",
           "{project}"
         ]
       }
@@ -198,6 +197,20 @@
       "launch": {
         "type": "agent",
         "exe": "%USERPROFILE%\\.toolkit\\bin\\qoderclicn.cmd",
+        "args": []
+      }
+    },
+    {
+      "id": "antigravity-cli",
+      "label": "Antigravity CLI",
+      "kind": "agent",
+      "provider": "gemini",
+      "detect": [
+        "%LOCALAPPDATA%\\agy\\bin\\agy.exe"
+      ],
+      "launch": {
+        "type": "agent",
+        "exe": "%LOCALAPPDATA%\\agy\\bin\\agy.exe",
         "args": []
       }
     }
