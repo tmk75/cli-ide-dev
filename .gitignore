@@ -1,4 +1,5 @@
 node_modules/
 state.json
 .compliance-framework.json
+.env
 *.log
